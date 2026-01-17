@@ -29,7 +29,6 @@ header.header {
 .navbar a:hover { 
   color:#ffa500;
  }
-/* Home */
 .home {
    height:100vh; 
    position:relative; 
@@ -48,7 +47,20 @@ header.header {
    background-size:cover;
     background-position:center;
    }
-@keyframes swipeImages { 0%{transform:translateX(0);}33%{transform:translateX(-33.3333%);}66%{transform:translateX(-66.6667%);}100%{transform:translateX(0);} }
+@keyframes swipeImages {
+  0%{
+    transform:translateX(0);
+  }
+  33%{
+    transform:translateX(-33.3333%);
+  }
+  66%{
+    transform:translateX(-66.6667%);
+  }
+  100%{
+    transform:translateX(0);
+  } 
+}
 .home-content {
    position:relative;
     z-index:2; top:40%; 
@@ -56,9 +68,15 @@ header.header {
      text-align:center; color:#fff;
       padding:0 20px; 
     }
-.quote-big { font-size:48px; font-weight:600; margin-bottom:10px; }
-.quote-fun { font-size:20px; font-style:italic; }
-/* About */
+.quote-big {
+  font-size:48px; 
+  font-weight:600;
+  margin-bottom:10px;
+}
+.quote-fun {
+  font-size:20px;
+  font-style:italic;
+}
 .about-us-box {
     background-color: #f0f0f0;
     padding: 30px;
@@ -94,7 +112,6 @@ header.header {
     font-size: 16px;
     margin-bottom: 10px;
   }
-/* Menu */
 .menu-categories {
   text-align: center;
   margin-bottom: 20px;
@@ -149,11 +166,22 @@ html{
 section{
   scroll-margin-top: 80px;
 }
-/* Reservation */
-.reservation { padding:100px 50px; background:#ffe5b4; text-align:center; }
-.reserve-btn { background:#ff8000; color:#fff; padding:15px 30px; font-size:20px; border:none; border-radius:5px; cursor:pointer; }
-.reserve-btn:hover { background:#e67300; }
-/* Reservation Modal */
+.reservation { 
+  padding:100px 50px;
+  background:#ffe5b4; 
+  text-align:center;
+}
+.reserve-btn { 
+  background:#ff8000;
+  color:#fff;
+  padding:15px 30px; 
+  font-size:20px;
+  border:none; border-radius:5px; 
+  cursor:pointer; 
+}
+.reserve-btn:hover { 
+  background:#e67300;
+}
 .reservation-form {
    display:none; 
    position:fixed; 
@@ -170,8 +198,12 @@ section{
 .reservation-form input, .reservation-form textarea { margin-bottom:15px; padding:10px; border:none; border-radius:5px; }
 .reservation-form button { background:#333; color:#fff; padding:10px; border:none; border-radius:5px; cursor:pointer; }
 .reservation-form button:hover { background:#000; }
-.close-btn { position:absolute; top:10px; right:15px; font-size:24px; color:#fff; cursor:pointer; }
-/* Feedback */
+.close-btn {
+  position:absolute;
+  top:10px; right:15px; 
+  font-size:24px; color:#fff;
+  cursor:pointer;
+}
 .feedback { 
   padding:100px 50px;
    background:#f9f9f9;
@@ -180,7 +212,6 @@ section{
 .feedback-grid { display:flex; justify-content:center; gap:20px; flex-wrap:wrap; }
 .feedback-box { background:#fff; padding:20px; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.1); width:250px; text-align:center; }
 .feedback-box .person { font-weight:bold; margin-bottom:5px; }
-/* Stats */
 body {
    font-family: Arial, sans-serif;
    background-color: #f4f4f4;
@@ -201,9 +232,14 @@ body {
 .counter-container div:hover { transform: scale(1.05); box-shadow: 0 8px 15px rgba(0,0,0,0.15); }
 .counter-container h3 { font-size: 3rem; color: orange; margin-bottom: 10px; }
 .counter-container p { font-size: 1.2rem; color: #555; }
-@media (max-width: 768px) { .counter-container { flex-direction: column; gap: 30px; } }
-/* Footer */
-.footer { background:#000; 
+@media (max-width: 768px) { 
+  .counter-container {
+    flex-direction: column;
+    gap: 30px; 
+  } 
+}
+.footer { 
+  background:#000; 
   color:#fff;
    padding:50px 20px;
     display:flex;
