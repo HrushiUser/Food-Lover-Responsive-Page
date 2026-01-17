@@ -69,12 +69,10 @@ function toggleItems(category) {
   });
   currentCategory = category;
 }
-// Reservation modal logic 
 const reserveBtn = document.querySelector('.reserve-btn');
 const formModal = document.getElementById('reservation-form');
 reserveBtn.addEventListener('click', () => formModal.style.display = 'flex');
 formModal.querySelector('.close-btn').addEventListener('click', () => formModal.style.display = 'none');
-// Counters animation 
 const counters = [
   { id: "dishes", end: 120 },
   { id: "awards", end: 10 },
